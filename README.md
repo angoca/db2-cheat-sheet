@@ -4,7 +4,6 @@ The Cheat Sheet is licensed under the terms of Creative Commons Shared Alike 4.0
 
 This Cheat Sheet was ported to or included in:
 
-
 * Awesome
   * https://github.com/sindresorhus/awesome
     * https://github.com/angoca/awesome
@@ -28,3 +27,5 @@ Referenced at:
   * http://overapi.com/db2
   * https://github.com/overthecs/overthecs.github.io
     * https://github.com/angoca/overthecs.github.io
+* Scribd
+  * https://www.scribd.com/document/435503713/Db2-Cheat-Sheet-for-Development
