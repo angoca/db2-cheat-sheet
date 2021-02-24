@@ -21,11 +21,11 @@ Get the most recent version at [https://angoca.github.com/db2-cheat-sheet](https
   * [TERMINATE](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.5.0/com.ibm.db2.luw.admin.cmd.doc/doc/r0001973.html)
 * Get values from the environment (registry values).
   * Current timestamp:
-    * [VALUES CURRENT TIMESTAMP](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.5.0/com.ibm.db2.luw.sql.ref.doc/doc/r0001024.html)
+    * [VALUES](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.5.0/com.ibm.db2.luw.sql.ref.doc/doc/r0001024.html) [CURRENT TIMESTAMP](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.5.0/com.ibm.db2.luw.sql.ref.doc/doc/r0005886.html)
   * Connected user:
-    * [VALUES CURRENT USER](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.5.0/com.ibm.db2.luw.sql.ref.doc/doc/r0005886.html)
+    * [VALUES](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.5.0/com.ibm.db2.luw.sql.ref.doc/doc/r0001024.html) [CURRENT USER](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.5.0/com.ibm.db2.luw.sql.ref.doc/doc/r0011138.html)
   * Current database:
-    * [VALUES CURRENT SERVER](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.5.0/com.ibm.db2.luw.sql.ref.doc/doc/r0005882.html)
+    * [VALUES](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.5.0/com.ibm.db2.luw.sql.ref.doc/doc/r0001024.html) [CURRENT SERVER](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.5.0/com.ibm.db2.luw.sql.ref.doc/doc/r0005882.html)
 * List all tables:
   * [LIST TABLES](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.5.0/com.ibm.db2.luw.admin.cmd.doc/doc/r0001967.html)
   * [LIST TABLES FOR SCHEMA myuser](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.5.0/com.ibm.db2.luw.admin.cmd.doc/doc/r0001967.html)
@@ -194,12 +194,12 @@ Get the most recent version at [https://angoca.github.com/db2-cheat-sheet](https
 * Perform a query calling a function:
   * SELECT [HEX](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.5.0/com.ibm.db2.luw.sql.ref.doc/doc/r0000811.html)(col2) FROM tbl5
 * Call a function:
-  * [VALUES HEX('AnyText')](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.5.0/com.ibm.db2.luw.sql.ref.doc/doc/r0001024.html)
+  * [VALUES](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.5.0/com.ibm.db2.luw.sql.ref.doc/doc/r0001024.html) HEX('AnyText')
 * Perform a cast:
-  * [VALUES CAST('123' AS INTEGER)](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.5.0/com.ibm.db2.luw.sql.ref.doc/doc/r0001024.html)
+  * [VALUES](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.5.0/com.ibm.db2.luw.sql.ref.doc/doc/r0001024.html) CAST('123' AS INTEGER)
 * Concatenate:
-  * VALUES 'AnyText' || 5](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.5.0/com.ibm.db2.luw.sql.ref.doc/doc/r0001024.html)
-  * VALUES 'AnyText' [concat](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.5.0/com.ibm.db2.luw.sql.ref.doc/doc/r0001024.html) 5
+  * [VALUES](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.5.0/com.ibm.db2.luw.sql.ref.doc/doc/r0001024.html) 'AnyText' || 5
+  * [VALUES](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.5.0/com.ibm.db2.luw.sql.ref.doc/doc/r0001024.html) 'AnyText' concat 5
 * Escape a single quote in a text field:
   * [VALUES 'Sinead o''Connor'](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.5.0/com.ibm.db2.luw.sql.ref.doc/doc/r0001024.html)
 * Query the database catalog:
