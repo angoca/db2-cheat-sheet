@@ -198,22 +198,22 @@ Get the most recent version at [https://angoca.github.com/db2-cheat-sheet](https
 * Perform a cast:
   * [VALUES CAST('123' AS INTEGER)](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.5.0/com.ibm.db2.luw.sql.ref.doc/doc/r0001024.html)
 * Concatenate:
-  * [VALUES 'AnyText' || 5](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.5.0/com.ibm.db2.luw.sql.ref.doc/doc/r0001024.html)
-  * [VALUES 'AnyText' concat 5](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.5.0/com.ibm.db2.luw.sql.ref.doc/doc/r0001024.html)
+  * VALUES 'AnyText' || 5](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.5.0/com.ibm.db2.luw.sql.ref.doc/doc/r0001024.html)
+  * VALUES 'AnyText' [concat](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.5.0/com.ibm.db2.luw.sql.ref.doc/doc/r0001024.html) 5
 * Escape a single quote in a text field:
   * [VALUES 'Sinead o''Connor'](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.5.0/com.ibm.db2.luw.sql.ref.doc/doc/r0001024.html)
 * Query the database catalog:
-  * [SELECT * FROM SYSCAT.TABLES](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.5.0/com.ibm.db2.luw.sql.ref.doc/doc/r0001063.html)
-  * [SELECT * FROM SYSCAT.TABAUTH](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.5.0/com.ibm.db2.luw.sql.ref.doc/doc/r0001061.html)
-  * [SELECT * FROM SYSCAT.ROUTINES](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.5.0/com.ibm.db2.luw.sql.ref.doc/doc/r0001045.html)
+  * SELECT * FROM [SYSCAT.TABLES](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.5.0/com.ibm.db2.luw.sql.ref.doc/doc/r0001063.html)
+  * SELECT * FROM [SYSCAT.TABAUTH](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.5.0/com.ibm.db2.luw.sql.ref.doc/doc/r0001061.html)
+  * SELECT * FROM [SYSCAT.ROUTINES](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.5.0/com.ibm.db2.luw.sql.ref.doc/doc/r0001045.html)
 
 # SQL PL
 
 * Create a compound statement – Anonymous block:
   * [BEGIN DECLARE val SMALLINT; SET val = 1; WHILE (val &lt;= 5) DO INSERT INTO tbl5 VALUES (val, val); SET val = val + 1; END WHILE; END @](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.5.0/com.ibm.db2.luw.sql.ref.doc/doc/r0056580.html)
-* Perform a reorg via ADMIN_CMD (Sometimes required after “alter table”):
-  * [CALL SYSPROC.ADMIN_CMD('REORG TABLE tbl1')](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.5.0/com.ibm.db2.luw.sql.ref.doc/doc/r0000897.html)
 * Call a stored procedure with an IN and an OUTPUT parameter:
   * [CALL prc(5, ?)](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.5.0/com.ibm.db2.luw.sql.ref.doc/doc/r0000897.html)
+* Perform a reorg via ADMIN_CMD (Sometimes required after “alter table”):
+  * CALL [SYSPROC.ADMIN_CMD](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.5.0/com.ibm.db2.luw.sql.rtn.doc/doc/r0012547.html)('REORG TABLE tbl1')
 
 This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
