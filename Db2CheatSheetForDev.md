@@ -7,15 +7,15 @@ Get the most recent version at [https://angoca.github.com/db2-cheat-sheet](https
 
 * Execution of a file in the console (db2clp).
   * Semi-colon separated sentences:
-    * [db2 -t]](](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.5.0/com.ibm.db2.luw.admin.cmd.doc/doc/r0010410.html)
+    * [db2 -t](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.5.0/com.ibm.db2.luw.admin.cmd.doc/doc/r0010410.html)
   * At sign separated sentences (when there is SQL PL code):
-    * [db2 -td@](](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.5.0/com.ibm.db2.luw.admin.cmd.doc/doc/r0010410.html)
+    * [db2 -td@](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.5.0/com.ibm.db2.luw.admin.cmd.doc/doc/r0010410.html)
 * Define a terminator character:
-  * [--#SET TERMINATOR @](](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.5.0/com.ibm.db2.luw.apdv.sqlpl.doc/doc/t0009220.html)
+  * [--#SET TERMINATOR @](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.5.0/com.ibm.db2.luw.apdv.sqlpl.doc/doc/t0009220.html)
 * List all databases (aliases):
-  * [LIST DB DIRECTORY](](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.5.0/com.ibm.db2.luw.admin.cmd.doc/doc/r0001961.html)
+  * [LIST DB DIRECTORY](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.5.0/com.ibm.db2.luw.admin.cmd.doc/doc/r0001961.html)
 * Connect to a database (alias):
-  * [CONNECT TO mydb](](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.5.0/com.ibm.db2.luw.sql.ref.doc/doc/r0000906.html)
+  * [CONNECT TO mydb](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.5.0/com.ibm.db2.luw.sql.ref.doc/doc/r0000906.html)
 * Disconnect from a database:
   * [CONNECT RESET](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.5.0/com.ibm.db2.luw.sql.ref.doc/doc/r0000906.html)
   * [TERMINATE](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.5.0/com.ibm.db2.luw.admin.cmd.doc/doc/r0001973.html)
@@ -25,7 +25,7 @@ Get the most recent version at [https://angoca.github.com/db2-cheat-sheet](https
   * Connected user:
     * [VALUES CURRENT USER](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.5.0/com.ibm.db2.luw.sql.ref.doc/doc/r0005886.html)
   * Current database:
-    * [VALUES CURRENT SERVER]](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.5.0/com.ibm.db2.luw.sql.ref.doc/doc/r0005882.html)
+    * [VALUES CURRENT SERVER](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.5.0/com.ibm.db2.luw.sql.ref.doc/doc/r0005882.html)
 * List all tables:
   * [LIST TABLES](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.5.0/com.ibm.db2.luw.admin.cmd.doc/doc/r0001967.html)
   * [LIST TABLES FOR SCHEMA myuser](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.5.0/com.ibm.db2.luw.admin.cmd.doc/doc/r0001967.html)
@@ -55,7 +55,6 @@ Get the most recent version at [https://angoca.github.com/db2-cheat-sheet](https
   * [CREATE TABLE tbl1 (col1 CHAR(1) NOT NULL PRIMARY KEY)](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.5.0/com.ibm.db2.luw.sql.ref.doc/doc/r0000927.html)
   * [CREATE TABLE tbl2 (col1 INT NOT NULL, col2 DATE NOT NULL, PRIMARY KEY (col1, col2))](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.5.0/com.ibm.db2.luw.sql.ref.doc/doc/r0000927.html)
 * Create a table specifying tablespaces:
-](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.5.0/com.ibm.db2.luw.sql.ref.doc/doc/r0000927.html)
   * [CREATE TABLE tbl3 (col1 INT NOT NULL, col2 CHAR(1)) IN ts1 INDEX IN ts2](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.5.0/com.ibm.db2.luw.sql.ref.doc/doc/r0000927.html)
 * Create a table specifying schema:
   * [CREATE TABLE sch1.tbl4 (col1 INT)](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.5.0/com.ibm.db2.luw.sql.ref.doc/doc/r0000927.html)
@@ -205,7 +204,7 @@ Get the most recent version at [https://angoca.github.com/db2-cheat-sheet](https
   * [VALUES 'Sinead o''Connor'](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.5.0/com.ibm.db2.luw.sql.ref.doc/doc/r0001024.html)
 * Query the database catalog:
   * [SELECT * FROM SYSCAT.TABLES](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.5.0/com.ibm.db2.luw.sql.ref.doc/doc/r0001063.html)
-  * [SELECT * FROM SYSCAT.TABAUTH(https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.5.0/com.ibm.db2.luw.sql.ref.doc/doc/r0001061.html)
+  * [SELECT * FROM SYSCAT.TABAUTH](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.5.0/com.ibm.db2.luw.sql.ref.doc/doc/r0001061.html)
   * [SELECT * FROM SYSCAT.ROUTINES](https://www.ibm.com/support/knowledgecenter/en/SSEPGG_11.5.0/com.ibm.db2.luw.sql.ref.doc/doc/r0001045.html)
 
 # SQL PL
